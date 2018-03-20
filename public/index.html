@@ -10,8 +10,64 @@
   <link rel='stylesheet' type='text/css' href='./style.css'>
 </head>
 <body>
-  <div id="map"></div>
+  
+  <header>
+    <nav>
+      <div class = "nav-item">
+        <a href="#">Home</a>
+      </div>
+      <div class = "nav-item">
+        <a href="#">About</a>
+      </div>
+      <div class = "nav-item">
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+  </header>
 
+
+
+  <section id="map">
+
+    <div id ="typeSelection">
+      <label>Hotels</label>
+      <select>
+        <option value="Hilton">Hilton</option>
+        <option value="Doubletree">Doubletree</option>
+      </select>
+      <button type = "button">+</button>
+      <label>Restaurants</label>
+      <select>
+        <option value="Arby's">Arby's</option>
+      </select>
+      <button type = "button">+</button>
+      <label>Things To Do</label>
+      <select>
+        <option value="movies">movies</option>
+      </select>
+      <button type = "button">+</button>
+    </div>
+
+    <div id ="itinerary">
+      <label>My Hotel</label>
+      <ul>
+        <!-- <li class = "default">(none selected)</li> -->
+        <li><button type = "button">-</button>Hilton</li> 
+      </ul>
+      
+      <label>My Restaurants</label>
+      <ul>
+          <li><button type = "button">-</button>Arby's</li> 
+          <!-- <li class = "default">(none selected)</li> -->
+      </ul>
+      <label>My Activities</label>
+      <ul>
+          <li><button type = "button">-</button>movies</li> 
+          <!-- <li class = "default">(none selected)</li> -->
+      </ul>
+    </div>
+
+  </section>
 
   <script type='text/javascript' src='./bundle.js'></script>
 </body>

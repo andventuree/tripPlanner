@@ -5,10 +5,93 @@
 body {
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #C1B5AD;
+  /* background-color: #C1B5AD; */
 }
 
 #map {
   height: 100vh;
   width: 100vw;
+  display: flex;
+}
+
+header nav {
+  display: flex;
+  background-color: darkblue;
+}
+
+.nav-item {
+  height: 1.5em;
+  margin: 0 1.5em 0 0;
+ }
+ 
+.nav-item a {
+  font-size: 1.3em;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.nav-item a:hover {
+  color: #202b47;
+  background-color: #fff;
+  box-shadow: #d3d3d3;
+}
+
+#typeSelection {
+  width: 27vw;
+  height: 40vh;
+  position: absolute;
+  z-index: 3;
+  background: rgba(128,128,128,0.5) ;
+  right: 0;
+}
+
+#itinerary {
+  width: 27vw;
+  height: 50vh;
+  position: absolute;
+  z-index: 3;
+  background: rgba(128,128,128,0.5) ;
+  right: 0;
+  bottom: 0;
+}
+
+
+#typeSelection label, #itinerary label {
+  display: block;
+  font-size: 2em;
+  margin: .5em;
+  font-weight: bold;
+}
+
+#typeSelection select {
+  font-size: 1.5em;
+  margin: .5em;
+  width: 20vw;
+}
+
+#map button {
+  color: white;
+  border-radius: 20%;
+  font-size: 1.25em;
+  /* width: 1.5em;
+  height: 1.5em; */
+}
+
+#typeSelection button {
+  background-color: green;
+}
+
+#itinerary button {
+  background-color: red;
+  /* padding: 0 0.25em; */
+  margin-right: 0.5em;
+}
+
+#itinerary ul {
+  list-style-type: none;
+  padding-left:0;
+  margin-left: .5em;
+  font-size: 1.5em;
 }
